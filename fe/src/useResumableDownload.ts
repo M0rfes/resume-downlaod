@@ -31,14 +31,14 @@ export function useResumableDownload(url: string, filename: string) {
     return { offset, totalSize };
   };
 
-  const setMeta = async (db: IDBPDatabase, offset: number, totalSize: number) => {
+  const setMeta = async (db: IDBPDatabase, offset: number, totalSize?: number) => {
     await db.put("meta", offset, "offset");
     if (totalSize !== undefined) {
       await db.put("meta", totalSize, "totalSize");
     }
   };
 
-  const downloadChunk = useCallback(async (start: number, db: IDBPDatabase, totalSize: number) => {
+  const downloadChunk = useCallback(async (start: number, db: IDBPDatabase, totalSize?: number) => {
     abortControllerRef.current = new AbortController();
     const res = await fetch(url, {
       headers: { Range: `bytes=${start}-${start + CHUNK_SIZE - 1}` },
