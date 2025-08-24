@@ -1,8 +1,25 @@
 {
   "name": "fe",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "description": "React frontend for resumable file downloads with pause/resume functionality",
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "download",
+    "resumable",
+    "file-download",
+    "chunked-download"
+  ],
+  "author": "fahim khan <fahimkhan20148@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M0rfes/resume-downlaod.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/cash-app/resume-download",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

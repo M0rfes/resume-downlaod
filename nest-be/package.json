@@ -1,10 +1,23 @@
 {
   "name": "nest-be",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "0.0.0",
+  "description": "NestJS backend for resumable file downloads with HTTP Range support",
+  "keywords": [
+    "nestjs",
+    "typescript",
+    "download",
+    "resumable",
+    "file-download",
+    "http-range",
+    "chunked-download"
+  ],
+  "author": "fahim khan <fahimkhan20148@gmail.com>",
   "private": true,
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M0rfes/resume-downlaod.git"
+  },
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
