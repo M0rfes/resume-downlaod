@@ -1,0 +1,17 @@
+{
+  "name": "express-be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "fahim khan <fahimkhan20148@gmail.com>",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express","node","download","resume"],
+  "license": "ISC",
+  "description": "express server for download resume",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
